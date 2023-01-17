@@ -1,0 +1,177 @@
+*, 
+*::before,
+*::after{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    min-width: 321px;
+    background: linear-gradient(90deg, #182858 0%, #5b6cb7 100%);
+    color: aliceblue;
+}
+/*       Navigation Styles Start           */
+.navBrand{
+    font-family: 'Caramel', cursive;
+    font-weight: 700;
+    font-size: xx-large;
+}
+.navMenu{
+    display: flex;
+    width: 100%;
+    min-width: 421px;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: aliceblue;
+    font-size: 2vw;
+    font-weight: 500;
+    top: 0%;
+    left: 0%;
+    overflow: visible;
+    height: fit-content;
+    position: fixed;
+}
+a{
+    padding: 8px;
+    text-decoration: none;
+}
+.navMenu a :hover{
+    color: rgb(23, 121, 232);
+    font-size:32px;
+}
+/*              Navigation   END         */
+/*         Section About Styling Start */
+main{
+    margin: 4%;
+}
+#One{
+    text-align: center;
+    line-height: 35px;
+    margin-top: 150px;
+    margin-bottom: 8%;
+}
+
+#One h1{
+    font-size: 7vw;
+    font-weight: 700;
+    margin-top: 7%;
+    margin-bottom: 8%;
+    letter-spacing: 10px;
+}
+#One h2{
+    font-size: 4vw;
+    font-weight: 500;
+}
+.Intro{
+    margin-top: 10%;
+}
+
+/*      Section Skills and Know me Start */
+
+#Two{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.Know{
+    width: 50%;
+    text-align: justify;
+    font-size: larger;
+    padding: 3%;
+    line-height: 35px;
+    font-style: normal;
+}
+.Know h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: normal;
+}
+.Know button{
+    margin: 3%;
+    padding: 1%;
+    width: 35%;
+    background-color: #eb455f;
+    color: whitesmoke;
+    border: 3px solid;
+    border-radius: 8px;
+    font-size: x-large;
+    font-family: inherit;
+    cursor: pointer;
+}
+.Grid{
+    width: 50vw;
+    font-size: larger;
+    padding: 3%;
+    text-align: center;
+}
+.Grid h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Skills{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding: 5% 5%;
+}
+.Skills p{
+    margin: 5%;
+    background-color: turquoise;
+    border-radius: 5%;
+    padding: 5%;
+    font-size: larger;
+    justify-content: space-between;
+}
+
+/**************** Section Three ***********************/
+
+#Education{
+    margin-top: 150px;
+}
+.BlogContainer{
+    width: 55%;
+    min-width: 421px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 12px 10px;
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    border-radius: 12vw;
+    box-shadow: rgba(0,0,0, 0.3);
+    text-align: center;
+}
+.FormBasic{
+    margin-top: 150px;
+}
+.Contact{
+    margin-top: 50px;
+}
+.Project{
+    margin-top: 150px;
+}
+
+@media screen and (max-width: 650px){
+#Two{
+    display: grid;
+    width: fit-content;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: center;
+    font-size: small;
+}
+.Intro{
+    margin-top: 20%;
+}
+#Two{
+    display: block;
+}
+.navBrand{
+    font-size: 14px;
+    font-weight: 700;
+}
+}

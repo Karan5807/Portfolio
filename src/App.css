@@ -25,7 +25,7 @@ body {
 .Header {
   font-family: 'Style Script', cursive;
   top: 0px;
-  position: absolute;
+  position: fixed;
 }
 
 .Description {

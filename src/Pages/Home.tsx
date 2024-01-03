@@ -1,7 +1,8 @@
 import Header from "../Core/Header";
 import "../App.css";
 import { Grid, Typography } from "@mui/material";
-import StarIcon from '@mui/icons-material/Star';
+import { TimeLineCard } from "../Core/TimeLineCard";
+import { HomeLeftData, HomeRightData, dataLeft, dataRight } from "../assets/data/constantData";
 
 function Home() {
 
@@ -20,21 +21,21 @@ function Home() {
             <Typography textAlign={"center"} fontFamily={"Style Script"} variant="h1">Hello World !</Typography>
           </Grid>
 
-          <Grid item mt={5} p={1}>
+          {/* <Grid item mt={5} p={1}>
             <Typography fontFamily={"Euphoria Script"} textAlign={"center"} variant="h3">Step inside my Online Space</Typography>
           </Grid>
 
           <Grid item mt={5} p={1}>
             <Typography textAlign={"center"} fontFamily={"Euphoria Script"} variant="h3">Begin your journey on my Website</Typography>
-          </Grid>
+          </Grid> */}
 
-          <Grid>
+          <Grid container justifyContent={"center"} mb={2}>
             <Grid item mt={5} p={1}>
               <Typography textAlign={"center"} fontFamily={"Montserrat"} variant="h1">I'm Karan Singh</Typography>
             </Grid>
 
             <Grid item mt={5} p={1}>
-              <Typography textAlign={"center"} fontFamily={"Montserrat"} variant="h2">A Full Stack Developer <span>An Aspring Data Scientist</span></Typography>
+              <Typography textAlign={"center"} fontFamily={"Montserrat"} variant="h3">A Full Stack Developer <span>An Aspring Data Scientist</span></Typography>
             </Grid>
 
           </Grid>
@@ -44,26 +45,18 @@ function Home() {
         <Grid container mt={3} p={3} display={"flex"} justifyContent={"space-evenly"} className="About">
 
           <Grid item width={500}>
-            <Typography textAlign={"justify"} fontFamily={"Roboto"} variant="h6">
-              <span ><StarIcon /></span>    Welcome to my developer portfolio! I'm passionate about crafting digital experiences and turning ideas into functional, beautiful websites and applications. As a developer, I bring a unique blend of creativity and technical expertise to every project.
-              <br />
-              <br />
-              <span ><StarIcon /></span>    In this digital showcase, you'll find a collection of my work, Each project represents a unique challenge I've tackled, showcasing my skills in front-end and back-end development.
-              <br />
-              <br />
-              <span ><StarIcon /></span>    My goal is to create seamless, user-friendly experiences that not only meet the technical requirements but also leave a lasting impression. I believe in the power of clean code and intuitive design.
+            <Typography textAlign={"left"} fontFamily={"Roboto"} variant="h6">
+              {dataLeft.map((user: HomeLeftData) => (
+                <TimeLineCard key={user.name} data={user.detail} />
+              ))}
             </Typography>
           </Grid>
 
           <Grid item width={500} justifyContent={"flex-end"}>
-            <Typography textAlign={"justify"} fontFamily={"Roboto"} variant="h6">
-              <span ><StarIcon /></span>    Technologies are my tools, and I'm proficient in a wide range of them, including HTML, CSS, JavaScript, TypeScript, Python, and many more. I'm also well-versed in using various frameworks and libraries to optimize and accelerate development.
-              <br />
-              <br />
-              <span ><StarIcon /></span>    Continuous learning is a cornerstone of my approach. I'm always exploring new technologies, trends, and best practices to stay at the forefront of the industry and provide the best solutions to my company and clients.
-              <br />
-              <br />
-              <span ><StarIcon /></span>    Whether you're a business in need of a digital presence, a startup with an app idea, or a fellow developer looking to collaborate, I'm eager to hear from you and discuss how I can contribute to your success.
+            <Typography textAlign={"left"} fontFamily={"Roboto"} variant="h6">
+              {dataRight.map((user: HomeRightData) => (
+                <TimeLineCard key={user.name} data={user.detail} />
+              ))}
             </Typography>
           </Grid>
 

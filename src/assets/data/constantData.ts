@@ -45,3 +45,56 @@ export const dataWork: WorkData[] = [
 
     },
 ];
+
+export interface AcademicData {
+    instituationName: string,
+    courseName: string,
+    detailOne: string,
+    detailTwo: string,
+    detailThree: string,
+    detailFour: string
+}
+
+export const educationData: AcademicData[] = [
+    {
+        instituationName: "Sherwood College of Professional Management",
+        courseName: "Bachleor of Computer Application | BCA (2016-2019)",
+        detailOne: "I compeleted my Bachelor's of Computer Application from Lucknow (Uttar-Pradesh).",
+        detailTwo: " I was studied basic Computer Application Subject's like Database, OOPS, Operating System, Low-level-Design.",
+        detailThree: "Apart from this, I Learned Programming Langauges like Java,JavaScript, Python.",
+        detailFour: "Core Member of College Fest, Sports & Cultural Activities."
+    },
+
+    {
+        instituationName: "A R S Public School",
+        courseName: "Senior Secondary School | 12th (2014-2016)",
+        detailOne: "I Studied from class 11th & 12th in A.R.S Public School, Bokaro Steel City (Jharkhand).",
+        detailTwo: "I Passed class 12th with 63.90%, I was good in Chemistry.",
+        detailThree: "I Cleared PSA (Problem Solving Assesment) in 2015 Organised by CBSE.",
+        detailFour: "I was part of many Sports & Cultural Activities Member."
+    },
+
+    {
+        instituationName: "Bokaro Public School",
+        courseName: "Secondary School | 10th (2011-2014)",
+        detailOne: "I Studied from class 7th to 10th in Bokaro Public School, Bokaro Steel City (Jharkhand).",
+        detailTwo: "I Passed class 10th with 82.60%, I was good in Science and Social-Science.",
+        detailThree: "I participated in many programs and contest during my School Days",
+        detailFour: ""
+    }
+];
+
+
+export interface CertificationData {
+    title: string,
+    imageUrl:string,
+    description:string
+}
+
+export const certificationData: CertificationData[] = [
+    {
+        title:"ABCD",
+        imageUrl:"CNFH",
+        description:"JVIRFRFN"
+    }
+];

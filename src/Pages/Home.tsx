@@ -1,7 +1,7 @@
 import Header from "../Core/Header";
 import "../App.css";
 import { Grid, Typography } from "@mui/material";
-import { TimeLineCard } from "../Core/TimeLineCard";
+import { TimeLineCard } from "../Core/CardTemplate";
 import { HomeLeftData, HomeRightData, dataLeft, dataRight } from "../assets/data/constantData";
 
 function Home() {

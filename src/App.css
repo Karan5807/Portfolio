@@ -9,6 +9,7 @@
 body {
   padding: 0%;
   margin: 0%;
+  max-width: 1251px;
   box-sizing: border-box;
   background-image: linear-gradient(to right top, #051937, #041e41, #03234c, #022857, #002d62);
   color: aliceblue;
@@ -53,4 +54,11 @@ body {
   box-shadow: 2px 0px 44px 14px rgba(237, 237, 237, 0.6);
   -webkit-box-shadow: 2px 0px 44px 14px rgba(237, 237, 237, 0.6);
   -moz-box-shadow: 2px 0px 44px 14px rgba(237, 237, 237, 0.6);
+}
+
+.Education,.workExperience{
+  box-sizing: border-box;
+  border: 3px solid snow;
+  padding: 2rem;
+  border-radius: 1.5rem; 
 }
